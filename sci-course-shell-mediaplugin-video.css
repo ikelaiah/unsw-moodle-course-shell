@@ -1,0 +1,22 @@
+/* adjust mediaplugin video appearance */
+div.mediaplugin_videojs .video-js {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  div.mediaplugin_videojs {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  div.mediaplugin.mediaplugin_videojs > div {
+    width: 100%;
+    max-width: 720px;
+  }
+  
+  /* video - youtube only */
+  div.mediaplugin_videojs .vjs-youtube {
+    width: 100%;
+    max-width: 720px;
+  }

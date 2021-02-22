@@ -1,0 +1,214 @@
+/*set titles of resources and activities */
+body[id^="page-mod-"] #region-main .region-content div[role="main"] > h2 {
+  font-size: calc(1.5rem + 3.25vmin);
+}
+/* 2021-01-18 set titles of Student quiz, open forum, questionnaire */
+body[id^="page-mod-"]
+  #region-main
+  .region-content
+  div[role="main"]
+  .questionbankwindow
+  > h2 {
+  font-size: calc(1.5rem + 3.25vmin);
+}
+body[id^="page-mod-"]
+  #region-main
+  .region-content
+  div[role="main"]
+  #hsuforum-header
+  > h2 {
+  font-size: calc(1.5rem + 3.25vmin);
+}
+body[id^="page-mod-"]
+  #region-main
+  .region-content
+  div[role="main"]
+  .mod_questionnaire_viewpage
+  > h2 {
+  font-size: calc(1.5rem + 3.25vmin);
+}
+body[id^="page-mod-readingame"]
+  #region-main
+  .region-content
+  div[role="main"]
+  > h1 {
+  font-size: calc(1.5rem + 3.25vmin);
+}
+
+/* alter top-bottom margin of label resource */
+li.activity.label.modtype_label {
+  margin: 1.5rem 0 !important;
+}
+/* quick fix to misaligned activities and ul -- 2020-07-02 */
+body#page-course-view-topics .activityinstance {
+  margin-left: 30px;
+}
+.course-content li.section ul {
+  margin-left: 1rem;
+}
+li.main.section-summary div.content {
+  margin: 0.5rem 1rem;
+}
+li.main.section-summary div.content > ul {
+  margin-left: 1rem;
+}
+li.main.section-summary div.content > h3.section-title {
+  margin-left: 0rem;
+}
+
+/* additonal stylings for noty.js */
+.noty_body {
+  border-bottom: 0.25rem solid rgba(0, 0, 0, 0.125);
+}
+.noty_close_button {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+.noty_layout {
+  width: 145px !important;
+}
+
+/* custom feature - break-word */
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  word-wrap: break-word;
+}
+
+/* custom feature - round user picture */
+img.userpicture {
+  border-radius: 50%;
+}
+
+/* no text decoration */
+.no-text-decoration:hover {
+  text-decoration: none;
+}
+
+/* code - custom properties */
+pre code {
+  white-space: normal;
+}
+
+/* main topic layout */
+/* add more margin on bottom! */
+.course-content ul.topics li.section {
+  margin-bottom: 2rem;
+}
+.course-content .section-summary {
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* removed a transparent border top... ?!*/
+.course-content ul.topics li.current {
+  border-top: unset;
+}
+/* remove the bottom border from end of summary sections, */
+/* require a better implementation than this, say check if the course section summary has box, if yes, remove the default bottom line */
+.course-content ul li.section.main {
+  border-bottom: 1px solid #ddd;
+}
+/* main topic Page */
+/* main title in Topic-0, Collapsible format only */
+body#page-course-view-topcoll #section-0 > .content > .section-title {
+  font-size: calc(1.5rem + 2.15vmin);
+  font-weight: 300;
+  margin-left: 0.5rem !important;
+}
+body#page-course-view-topcoll h3.sectionname {
+  font-size: calc(1.125rem + 1.125vmin);
+  font-weight: 300;
+}
+/* section title in main course landing page, applicable for Topic View format */
+body#page-course-view-topics .course-content .section-summary .section-title,
+body#page-course-view-topics .section .content .sectionname {
+  font-size: calc(1.125rem + 2.15vmin);
+  font-weight: 300;
+  margin-left: 0.5rem !important;
+}
+/* section title underline position in main course landing page */
+.course-content .section-summary .section-title a,
+.section .content .sectionname a {
+  text-underline-position: under;
+}
+/* section title in top navigations area - single section */
+.single-section .section-navigation.navigationtitle .sectionname {
+  text-align: center;
+  clear: both;
+  padding-top: 2.25rem;
+  font-size: 2rem;
+  font-weight: 300;
+  font-size: calc(1.5785rem + 2.75vmin);
+  border-bottom: 1px solid #efc107;
+  margin-bottom: 1.25rem;
+}
+/* top navigations - single section */
+.single-section .section-navigation.navigationtitle .mdl-right {
+  font-weight: 400;
+  float: right;
+  margin-left: 1em;
+  font-size: calc(0.875rem + 0.5vmin);
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.single-section .section-navigation.navigationtitle .mdl-left {
+  font-weight: 400;
+  float: left;
+  margin-left: 1em;
+  font-size: calc(0.875rem + 0.5vmin);
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+/* bottom navigations - single section */
+.single-section .section-navigation.mdl-bottom .mdl-right {
+  font-weight: 400;
+  float: right;
+  margin-left: 1em;
+  font-size: calc(0.875rem + 0.5vmin);
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.single-section .section-navigation.mdl-bottom .mdl-left {
+  font-weight: 400;
+  float: left;
+  margin-left: 1em;
+  font-size: calc(0.875rem + 0.5vmin);
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+/* set min height for the section headings */
+div.summarytext div.section-summary-box {
+  background-color: #efefef;
+  border-radius: 15px 50px 30px 5px;
+  padding: 10px;
+  font-family: arial;
+  font-size: 1.125rem;
+  color: #222;
+  min-height: 7.813rem;
+  margin: 10px;
+}
+div.summary div.section-summary-box {
+  background-color: #efefef;
+  border-radius: 15px 50px 30px 5px;
+  padding: 10px;
+  font-family: arial;
+  font-size: 1.125rem;
+  color: #222;
+  min-height: 7.813rem;
+  margin: 10px;
+}
+
+/* Moodle badge customisation */
+.isstealth span.badge.badge-info {
+  color: #555 !important;
+  background-color: #e0e0e0;
+}
+.ishidden span.badge.badge-info {
+  color: #eee !important;
+  background-color: #424242;
+}
+
+/* Topic customisation */
+li.section.main.clearfix.hidden {
+  background-color: #fafafa;
+  border: 1px dashed #ddd;
+  padding: 2rem;
+}

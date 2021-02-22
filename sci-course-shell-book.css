@@ -1,0 +1,217 @@
+/* General settings */
+div.book_content {
+  color: #222;
+  line-height: 1.61803398875;
+  font-size: 1.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64ch;
+}
+@media screen and (min-width: 60em) {
+  div.book_content {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 120em) {
+  div.book_content {
+    font-size: 1.375rem;
+  }
+}
+div.book_content h1,
+div.book_content h2,
+div.book_content h3,
+div.book_content h4,
+div.book_content h5,
+div.book_content h6 {
+  margin: 0 0 1.25rem 0;
+  font-weight: 600;
+  text-transform: none;
+}
+div.book_content * + p,
+div.book_content * + ul,
+div.book_content * + ol,
+div.book_content * + dl,
+div.book_content * + pre,
+div.book_content * + address,
+div.book_content * + fieldset,
+div.book_content * + figure {
+  margin-top: 1.25rem;
+}
+div.book_content ul > li > ul,
+div.book_content ul > li > ol,
+div.book_content ol > li > ol,
+div.book_content ol > li > ul {
+  margin-top: 0;
+}
+div.book_content ul,
+div.book_content ol {
+  padding-left: 2.5rem;
+}
+div.book_content * + h1,
+div.book_content * + h2,
+div.book_content * + h3,
+div.book_content * + h4,
+div.book_content * + h5,
+div.book_content * + h6 {
+  margin-top: 2.5rem;
+}
+
+/* -- figure - custom properties */
+div.book_content figure {
+  margin: 22px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  text-align: center;
+  padding: 4px;
+  display: inline-block;
+}
+
+/* -- figurecaption - custom properties */
+div.book_content figcaption {
+  background-color: #f8f8f8;
+  color: #444;
+  font: italic smaller sans-serif;
+  padding: 4px;
+  text-align: left;
+}
+
+/* pre - custom properties */
+pre {
+  white-space: normal;
+  background-color: #fafafa;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Moodle books - custom feature - heading figure for book section */
+figure.heading-section {
+  overflow: hidden;
+  height: 240px;
+  display: flex !important;
+}
+figure.heading-section > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* -- sidepanel - custom properties */
+div.block.block_book_toc {
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  font-size: 0.875rem;
+  line-height: 1.61;
+}
+
+/* -- font-sizes */
+.cop-book-title {
+  font-size: calc(1.5785rem + 3.332vmin);
+}
+div.book_content > div.no-overflow h1 {
+  font-size: calc(1.5785rem + 3.332vmin);
+}
+div.book_content > div.no-overflow h2 {
+  font-size: calc(1.1845rem + 2.5vmin);
+}
+div.book_content > div.no-overflow h3 {
+  font-size: calc(0.985rem + 1.85vmin);
+}
+div.book_content > div.no-overflow h4 {
+  font-size: calc(0.885rem + 1.65vmin);
+}
+div.book_content > div.no-overflow h5 {
+  font-size: calc(0.765rem + 1.45vmin);
+}
+div.book_content > div.no-overflow h6 {
+  font-size: calc(0.665rem + 1.25vmin);
+}
+div.book_content p,
+div.book_content li {
+  line-height: 1.61803398875;
+}
+div.book_content h1 {
+  line-height: 1.2;
+}
+div.book_content h2 {
+  line-height: 1.3;
+}
+div.book_content h3 {
+  line-height: 1.4;
+}
+div.book_content h4 {
+  line-height: 1.4;
+}
+div.book_content h5 {
+  line-height: 1.4;
+}
+div.book_content h6 {
+  line-height: 1.4;
+}
+
+/* -- chapter title font size */
+div.book_content > h3 {
+  font-size: calc(1.1845rem + 2.5vmin);
+}
+
+/* -- subchapter title font size */
+div.book_content > h4 {
+  font-size: calc(0.885rem + 1.883vmin);
+}
+
+/* adding divider between book content and chapter title */
+div.book_content div.no-overflow {
+  border-top: 1px solid #ffc107;
+  padding-top: 1rem;
+  border-bottom: 1px solid #ffc107;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  overflow: visible !important;
+}
+
+/* -- navigation - custom peroperties */
+.path-mod-book .navtop img.icon,
+.path-mod-book .navbottom img.icon {
+  margin-right: 6px;
+  margin-left: 6px;
+  transition: transform 0.25s;
+}
+div.navtop.navimages img.icon:hover,
+div.navbottom.navimages img.icon:hover {
+  transform: scale(1.5);
+}
+div.navtop.navimages img.icon,
+div.navbottom.navimages img.icon {
+  /*height: 24px;*/
+  vertical-align: text-bottom; /*width: 24px;*/
+}
+div.book_content ol ol,
+div.book_content ul ul,
+div.book_content ol ul,
+div.book_content ul ol {
+  margin-top: 0;
+}
+
+/* book navigation improvements */
+#page-mod-book-view .navtop.clearfix.navimages {
+  max-width: 108ch;
+  margin: auto;
+  background-color: #fafafa;
+  border-radius: 40px;
+  padding: 0.5rem;
+}
+#page-mod-book-view .navbottom.clearfix.navimages {
+  max-width: 108ch;
+  margin: auto;
+  background-color: #fafafa;
+  border-radius: 40px;
+  padding: 0.5rem;
+}
+#page-mod-book-view .navtop.clearfix.navtext {
+  background-color: #fafafa;
+  border-radius: 40px;
+  padding: 0.5rem;
+}
+#page-mod-book-view .navbottom.clearfix.navtext {
+  background-color: #fafafa;
+  border-radius: 40px;
+  padding: 0.5rem;
+}

@@ -1,0 +1,98 @@
+.cop-page-activity-title {
+  font-size: calc(1.5785rem + 3.332vmin);
+}
+body#page-mod-page-view div[role="main"] {
+  margin: 0 2rem;
+}
+body#page-mod-page-view div.generalbox.center {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/*custom heading and p properties */
+.cop-page-title {
+  font-size: calc(1.5785rem + 3.332vmin);
+}
+body#page-mod-page-view div.generalbox.center {
+  font-size: 1rem;
+  border-top: 1px solid #ffc107;
+  border-bottom: 1px solid #ffc107;
+}
+body#page-mod-page-view div.generalbox.center h1 {
+  font-size: calc(1.5785rem + 3.332vmin);
+}
+body#page-mod-page-view div.generalbox.center h2 {
+  font-size: calc(1.1845rem + 2.5vmin);
+}
+
+body#page-mod-page-view div.generalbox.center h3 {
+  font-size: calc(0.885rem + 1.883vmin);
+}
+body#page-mod-page-view div.generalbox.center h4 {
+  font-size: calc(0.665rem + 1.41vmin);
+}
+body#page-mod-page-view div.generalbox.center p,
+body#page-mod-page-view div.generalbox.center li {
+  line-height: 1.61803398875;
+  text-align: justify;
+}
+body#page-mod-page-view div.generalbox.center h1 {
+  line-height: 1.2;
+}
+body#page-mod-page-view div.generalbox.center h2 {
+  line-height: 1.3;
+}
+body#page-mod-page-view div.generalbox.center h3 {
+  line-height: 1.4;
+}
+body#page-mod-page-view div.generalbox.center h4 {
+  line-height: 1.4;
+}
+body#page-mod-page-view div.generalbox.center h5 {
+  line-height: 1.4;
+}
+body#page-mod-page-view div.generalbox.center h6 {
+  line-height: 1.4;
+}
+/* custom margins */
+
+body#page-mod-page-view div.generalbox.center h1,
+body#page-mod-page-view div.generalbox.center h2,
+body#page-mod-page-view div.generalbox.center h3,
+body#page-mod-page-view div.generalbox.center h4,
+body#page-mod-page-view div.generalbox.center h5,
+body#page-mod-page-view div.generalbox.center h6 {
+  margin: 0 0 1.25rem 0;
+  font-weight: 600;
+  text-transform: none;
+}
+body#page-mod-page-view div.generalbox.center * + p,
+body#page-mod-page-view div.generalbox.center * + ul,
+body#page-mod-page-view div.generalbox.center * + ol,
+body#page-mod-page-view div.generalbox.center * + dl,
+body#page-mod-page-view div.generalbox.center * + pre,
+body#page-mod-page-view div.generalbox.center * + address,
+body#page-mod-page-view div.generalbox.center * + fieldset,
+body#page-mod-page-view div.generalbox.center * + figure {
+  margin-top: 1.25rem;
+}
+body#page-mod-page-view div.generalbox.center ul > li > ul,
+body#page-mod-page-view div.generalbox.center ul > li > ol,
+body#page-mod-page-view div.generalbox.center ol > li > ol,
+body#page-mod-page-view div.generalbox.center ol > li > ul {
+  margin-top: 0;
+}
+body#page-mod-page-view div.generalbox.center * + h1,
+body#page-mod-page-view div.generalbox.center * + h2,
+body#page-mod-page-view div.generalbox.center * + h3,
+body#page-mod-page-view div.generalbox.center * + h4,
+body#page-mod-page-view div.generalbox.center * + h5,
+body#page-mod-page-view div.generalbox.center * + h6 {
+  margin-top: 2.5rem;
+}
+
+body#page-mod-page-view .box.generalbox ul,
+body#page-mod-page-view .box.generalbox ol {
+  padding-left: 2rem;
+}
